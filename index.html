@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,60 +10,65 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&family=Stick+No+Bills:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
+
+
+  <button class="skip-link">
+    <a href="#main-content">Skip to main content</a>
+  </button>
+ 
   <div class="container">
-    <div class="site-header">
+    <div class="site-header" id="top" aria-labelledby="Site Header">
       <h1>Jam Box Studios</h1>
-      <div class="main-nav">
+
+
+      <nav class="main-nav" role="navigation" aria-label="Main Navigation">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Reservation</a></li>
-          <li><a href="#">Studio</a></li>
+          <li><a aria-label="Jump to Home Page" href="#home">Home</a></li>
+          <li><a aria-label="Jump to Products" href="#products">Products</a></li>
+          <li><button aria-label="Sign up for Reservation" onclick="location.href='#reservation'">Reservation</button></li>
+          <li><a aria-label="Jump to Studio" href="#studio">Studio</a></li>
         </ul>
-      </div>
-      <img src="https://placekitten.com/1200/900" class="banner">
+      </nav>
+
+
+      <img src="https://placekitten.com/1200/900" class="banner" alt="Jam Box Studios Banner">
     </div>
-    <div class="main-content">
-      <h1>Welcome to Jam Box</h1>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
+   
+    <!-- bottom headers -->
+   
+      <div class="main-content" id="main-content">
+        <h2>Welcome to Jam Box</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue et magna et consequat. Mauris ut urna at orci sollicitudin auctor. Integer eget sollicitudin eros, sed mattis lectus. Nam convallis dapibus rhoncus. Praesent blandit mi ut lorem pulvinar, eget blandit ante pretium. Suspendisse quis sapien molestie urna pellentesque sagittis. Aliquam volutpat massa ut ex vehicula auctor.</p>
+     
+     
       <div class="owner">
-        <h1>Meet the owner</h1>
-        <ul>
-          <li>Name: John Doe</li>
-          <li>Title: CEO</li>
-          <li>Email: johnjoe@jambox.ca</li>
-          <li>Phone: 613-000-0000</li>
-        </ul>
-        <h1>Address</h1>
-        <p>
-          Jambox Studios
-          123 Guitar Road,
-          Musicville, Danceistan
-          B3T 0L0
-        </p>
+        <h2>Meet the owner</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue et magna et consequat. Mauris ut urna at orci sollicitudin auctor. Integer eget sollicitudin eros, sed mattis lectus. Nam convallis dapibus rhoncus. Praesent blandit mi ut lorem pulvinar, eget blandit ante pretium. Suspendisse quis sapien molestie urna pellentesque sagittis. Aliquam volutpat massa ut ex vehicula auctor.</p>
       </div>
-      <div class="contact-section">
-        <h1>Contact Us</h1>
-        <form action="thanks.html">
-          <label>Full Name</label>
-          <input type="text" placeholder="Full Name">
-          <input type="text" placeholder="Email">
-          <input type="text" placeholder="Subject">
-          <b>Your Message</b>
-          <textarea></textarea>
-          <button type="submit">Send</button>
-        </form>
+
+
+      <div class="contact-section" id="reservation">
+        <h2>Contact Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue et magna et consequat. Mauris ut urna at orci sollicitudin auctor. Integer eget sollicitudin eros, sed mattis lectus. Nam convallis dapibus rhoncus. Praesent blandit mi ut lorem pulvinar, eget blandit ante pretium. Suspendisse quis sapien molestie urna pellentesque sagittis. Aliquam volutpat massa ut ex vehicula auctor.</p>
       </div>
-    </div>
-    <div class="site-footer">
-      &copy; 2021 Jam Box Studios
-    </div>
+
+
+      <button class="site-footer">
+      <a href="#top">Back to Top</a></footer>
+      </button>
+
+
+      <!-- footer -->
+      <div>
+         &copy; 2021 Jam Box Studios
+      </div>
   </div>
 </body>
+
 
 </html>
